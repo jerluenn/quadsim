@@ -34,8 +34,6 @@ class Quad:
         thrust_world = np.dot(self.rotate_body_to_world, thrust_body)
         drag_force = np.dot(self.drag_mu, self.x_dot)
         self.x_dd = mg + thrust_world + drag_force
-        
-
 
         # self.theta_dd = 
 
