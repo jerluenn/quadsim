@@ -35,9 +35,9 @@ class Quad:
         drag_force = np.dot(self.drag_mu, self.x_dot)
         self.x_dd = mg + thrust_world + drag_force
 
-        # self.theta_dd = 
+        self.theta_dd = 0 
 
 if __name__ == "__main__": 
 
-    print("test")
-    print("hello")
+    crazyflie = Quad(0.1, np.diag([0.1, 0.1, 0.1]), 0.8)
+    print(crazyflie)
